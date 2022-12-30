@@ -6,278 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="317dp"
-        android:layout_height="42dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="STATUS:"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/STATUS_VALUE"
-            android:layout_width="122dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="         NULL"
-            android:textSize="30sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="360dp"
-        android:layout_height="239dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#5DD3AD"
-            android:text="N0" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/N0_KEY0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:text="KEY0" />
+            <ImageView
+                android:id="@+id/menu_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                app:srcCompat="@drawable/cslide1"
+                tools:srcCompat="@drawable/cslide1" />
 
-            <TextView
-                android:id="@+id/N0_VALUE0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="VALUE" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:orientation="vertical"
+                android:background="#eeeeee"
+                >
+
+                <TextView
+                    android:id="@+id/STATUS_VALUE"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="40dp"
+                    android:text="Null" />
+
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="現在の温度"
+                    android:textAlignment="center"
+                    android:textSize="31sp" />
+
+                <TextView
+                    android:id="@+id/temp_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:text="00.0"
+                    android:textAlignment="center"
+                    android:textSize="70sp" />
+
+                <TextView
+                    android:id="@+id/alart_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/N0_KEY1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:background="#FFFFFF"
-                android:text="KEY1"
-                app:autoSizeTextType="none" />
-
-            <TextView
-                android:id="@+id/N0_VALUE1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:text="VALUE" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/N0_KEY2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:text="KEY2" />
-
-            <TextView
-                android:id="@+id/N0_VALUE2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="VALUE" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/N0_KEY3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:background="#FFFFFF"
-                android:text="KEY3" />
-
-            <TextView
-                android:id="@+id/N0_VALUE3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:text="VALUE" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/N0_KEY4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:text="KEY4" />
-
-            <TextView
-                android:id="@+id/N0_VALUE4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="VALUE" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#5DD3AD"
-            android:text="N1" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/N1_KEY0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:text="KEY0" />
-
-            <TextView
-                android:id="@+id/N1_VALUE0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="VALUE" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/N1_KEY1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:text="KEY1" />
-
-            <TextView
-                android:id="@+id/N1_VALUE1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="VALUE" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/N1_KEY2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:text="KEY2" />
-
-            <TextView
-                android:id="@+id/N1_VALUE2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="VALUE" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/N1_KEY3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:text="KEY3" />
-
-            <TextView
-                android:id="@+id/N1_VALUE3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="VALUE" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/N1_KEY4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:width="40sp"
-                android:text="KEY4" />
-
-            <TextView
-                android:id="@+id/N1_VALUE4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="VALUE" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/SERIAL_MSG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

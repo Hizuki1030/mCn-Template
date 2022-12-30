@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "mCn-Template"
+rootProject.name = "CookApp"
 include ':app'

@@ -1,4 +1,4 @@
-package com.example.mCnTemplate;
+package com.example.CookApp;
 
 import org.junit.Test;
 
